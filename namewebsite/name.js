@@ -1,6 +1,6 @@
 const btnElement = document.querySelector('button');
 const spanElement = document.getElementById('updateContent');
-btnElement.onclick= function() {
+btnElement.addEventListener("click",function() {
     const yourName = prompt('What is your name?');
     spanElement.textContent = yourName
-}
+})
