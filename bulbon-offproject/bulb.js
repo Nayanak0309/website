@@ -3,8 +3,8 @@ const body = document.body;
 
 if (switchBtn) {
     switchBtn.addEventListener('click', function () {
-        body.classList.toggle('on');   // ✅ match CSS class
+        body.classList.toggle('on');   
     });
 } else {
-    console.error("❌ No element with class 'switch' found in HTML.");
+    console.error(" No element with class 'switch' found in HTML.");
 }

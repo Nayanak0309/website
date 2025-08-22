@@ -1,0 +1,47 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family:  sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: blueviolet;
+    color: white;
+
+}
+.container {
+    text-align: center;
+}
+.number-generator {
+    font: size 3px;;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out;
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(32, 11, 216);
+    border: 2px solid rgb(183, 178, 224);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 4px 6px rgba(15, 14, 14, 0.1);
+    transition: background-color 0.3s ease ;
+}
+bottom:hover {
+    background-color: rgb(19, 7, 105);
+    color: rgb(23, 146, 43);
+}
