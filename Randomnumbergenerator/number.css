@@ -14,8 +14,8 @@ body{
 .container {
     text-align: center;
 }
-.number-generator {
-    font: size 3px;;
+.number-generate {
+    font-size :3rem;
     margin-bottom: 1rem;
     animation: fadeIn 1s ease-in-out;
 
