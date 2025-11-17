@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer - Split Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side: Controls -->
+        <div class="left">
+            <h2>Pick a Color</h2>
+            <input type="color" id="colorPicker">
+            <p>Selected Color: <span id="colorCode">#ffffff</span></p>
+            <button onclick="changeColor('#FF5733')">Red</button>
+            <button onclick="changeColor('#33FF57')">Green</button>
+            <button onclick="changeColor('#3357FF')">Blue</button>
+            <button onclick="changeColor('#F1C40F')">Yellow</button>
+        </div>
+
+        <!-- Right Side: Preview Box -->
+        <div class="right">
+            <h2>Color Preview</h2>
+            <div class="color-box" id="colorBox"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
