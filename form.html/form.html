@@ -8,10 +8,26 @@
         body{
             background-color: blueviolet;
         }
+        div{
+            background-color:rgb(157, 23, 219);
+            transform: matrix();
+            margin: 50px;
+            padding: 20px;
+            margin-top: 50px;
+            display:block;
+            transition: 3s;
+            animation: forwards;
+
+        }
+        #pi{
+            color: blue;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
-    <p>forms in HTML</p>
+    <div>
+    <p id="pi">forms in HTML</p>
     <form>
         <label for="fname" >First Name</label><br>
         <input type="text" name="fname" id="fname" ><br>
@@ -31,24 +47,31 @@
 
         <p>knowlegde about course</p>
         <input type="checkbox" id="course" name="course">
-        <label for="course">i konow basic</label>
+
+        <label for="course">i konow basic</label><br>
+
         <input type="checkbox" id="course" name="course">
         <label for="course">i konow structure</label>
         <br>
 
         <input type="color" name="color" id="color">
         <label for="color">choose the color</label>
-        <input type="file" name="file" id="file">
-        <label for="file">enter the cv</label>
+        <input type="file" name="file" id="file"><br>
+
+        <label for="file">enter the cv</label><br>
+
         <input type="date" id="date" name="id">
+        <br><br>
+
         <label for="date" >date of birth</label>
         <input type="datetime" id="date" name="id"><br>
 
-        <label for="date" >date of birth</label>
-        <input type="button">
+        
+        <input type="button" name="sun" value="click">
 
 
 
     </form>
+    </div>
 </body>
 </html>
