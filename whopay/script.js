@@ -1,3 +1,4 @@
+
 function whoPay(names){
     var noOfPeople=names.length;
     var noOfPerpleP=Math.floor(Math.random()*noOfPeople);
