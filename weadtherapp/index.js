@@ -1,5 +1,8 @@
 const  button = document.getElementById("button-click");
-const input = document.getElementById("input-text")
+const input = document.getElementById("input-text");
+const Name=document.getElementById("city-location");
+const date=document.getElementById("timee");
+const temp=document.getElementById("city-temp");
 
  async function getData(cityName){
    const promise=await fetch(
@@ -10,5 +13,9 @@ const input = document.getElementById("input-text")
 button.addEventListener("click",async()=>{
     const value=input.value;
     const result=await getData(value);
-    console.log(result)
-})
+    Name.innerText="cityname: "+`${result.location.name},${result.location.region},${result.location.country}`,
+    date.innerText="current date: "+`${result.location.localtime}`,
+    temp.innerHTML="current temperature:"+result.current.temp_c
+
+    
+});
