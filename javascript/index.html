@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         .clo{
-            color: rgb(227, 31, 51);
+            color: #e31f33;
         }
     </style>
 </head>
@@ -15,26 +15,45 @@
         <h1 id="color-block">welcome to the party</h1>
     </span>
     <span><p>please fill the forms</p></span>
-    <button  class="clo" id="buttonClick">click for registration</button>
-    <script>
-       
-     function doSometh(){
-        console.log("hey")
-     }
-     const e = document.getElementById("buttonClick");
-     const e1 = document.getElementById("color-block");
+    <div id="my-container"></div>
+    <button id="buttonClick">click me</button>
 
-     e.addEventListener("click",()=>{
-        if(e1.style.color==="red"){
-            e1.style.color="blue";
-        }else if(e1.style.color==="blue"){
-            e1.style.color="pink";
-        }else if(e1.style.color==="pink"){
-            e1.style.color="tomato";
-        }else{
-            e1.style.color="red";
-        }
-     });
+    
+    
+    <script>
+
+     const button = document.getElementById("buttonClick");
+     const container = document.getElementById("my-container");
+
+     button.addEventListener("click",()=>{
+        const e1=document.createElement("h1");
+        e1.innerText="nayana";
+        container.appendChild(e1);
+     })
+
+
+
+
+
+
+       
+   //  function doSometh(){
+     //   console.log("hey")
+  //   }
+     //const e = document.getElementById("buttonClick");
+     //const e1 = document.getElementById("color-block");
+
+     //e.addEventListener("click",()=>{
+        //if(e1.style.color==="red"){
+          //  e1.style.color="blue";
+        //}else if(e1.style.color==="blue"){
+          //  e1.style.color="pink";
+        //}else if(e1.style.color==="pink"){
+          //  e1.style.color="tomato";
+        //}else{
+          //  e1.style.color="red";
+        //}
+     //});
     </script>
     </body>
 </body>
