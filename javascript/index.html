@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clo{
+            color: rgb(227, 31, 51);
+        }
+    </style>
+</head>
+<body>
+    <span>
+        <h1 id="color-block">welcome to the party</h1>
+    </span>
+    <span><p>please fill the forms</p></span>
+    <button  class="clo" id="buttonClick">click for registration</button>
+    <script>
+       
+     function doSometh(){
+        console.log("hey")
+     }
+     const e = document.getElementById("buttonClick");
+     const e1 = document.getElementById("color-block");
+
+     e.addEventListener("click",()=>{
+        if(e1.style.color==="red"){
+            e1.style.color="blue";
+        }else if(e1.style.color==="blue"){
+            e1.style.color="pink";
+        }else if(e1.style.color==="pink"){
+            e1.style.color="tomato";
+        }else{
+            e1.style.color="red";
+        }
+     });
+    </script>
+    </body>
+</body>
+</html>
